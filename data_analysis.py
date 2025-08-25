@@ -1,3 +1,6 @@
+# This script demonstrate fundamental data science steps.
+# It can be expanded by adding more complex data cleaning, feature engineering, statistical modeling, or advanced visualizaiton based on the specific project goals.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -56,5 +59,3 @@ if 'Category' in df.columns:
 
 print("\nData Analysis Complete.")
 
-# This script demonstrate fundamental data science steps.
-# It can be expanded by adding more complex data cleaning, feature engineering, statistical modeling, or advanced visualizaiton based on the specific project goals.
