@@ -17,13 +17,13 @@ except FileNotFoundError:
 
 # 2. Data Exploration and Cleaning (Basic)"
 print("\n---Intial Data Info---")
-df.Info()
+df.info()  # Python is case-sensitive so Info() will be treated as different than info()
 print("\n---First 5 Rows---")
 print(df.head(5))
 print(df.isnull().sum())
 
 # Cleaning: fill missing "Price" values with the mean
-if 'Price' in df.colulmns and df['Price'].isnull().any():
+if 'Price' in df.columns and df['Price'].isnull().any():
   df['Price'].fillna(df['Price'].mean(), inplace=True)
   print("\nFilled missing 'Price' values with the mean.")
 
@@ -32,7 +32,7 @@ print("\nBasic Statistics for Numerical Columns---")
 print(df.describe())
 
 # Visualization: Distribution of Products Prices
-if 'Price' in df.Columns:
+if 'Price' in df.columns:
   plt.figure(figsize=(8,6))
   sns.histplot(df['Price'], kde=True)
   plt.title('Distribution of Product Prices')
